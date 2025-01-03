@@ -38,7 +38,8 @@ if not os.path.isfile(LST_FILE):
     save_csv(load_settleup(USERS_FILE), LST_FILE)
 
 # Sidebar for navigating through different views
-menu = st.sidebar.selectbox("Select View", ["Poll ☕", "Current 💥", "Debts 💲", "History 📜", "Spotlight 🎇"])
+# menu = st.sidebar.selectbox("Select View", ["Poll ☕", "Current 💥", "Debts 💲", "History 📜", "Spotlight 🎇"])
+menu = st.sidebar.selectbox("Select View", ["Poll ☕", "Current 💥", "Debts 💲", "History 📜"])
 match menu:
     
     # Poll view to create an order
